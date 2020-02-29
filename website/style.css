@@ -1,14 +1,14 @@
 body{
-    background: #fffff8;
+    background: linear-gradient(0deg, rgb(201, 150, 120) 0%, rgb(230, 22, 8) 100%);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(100px, 200px);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
+    /* background: linear-gradient(0deg, rgb(201, 150, 120) 0%, rgb(230, 22, 8) 100%); */
     color: #f0d43a;
     justify-content: center;
     grid-gap: 1em;
@@ -17,40 +17,57 @@ body{
 }
 
 .holder{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20px; */
+    font-size: 8vw;
 }
 
 .entry{
-    background: rgba(59, 74, 107, .4);
+    text-align: center;
+    margin-top: 2vw;
 }
 
 #entryHolder{
-
+    margin-top: 10px;
+    font-size: 3vw;
+    background: rgba(59, 74, 107, .8);
 }
 
 #date{
+    margin-top: 10px;
+    font-size: 3vw;
+}
 
+#zip-code, #city-name{
+    margin-top: 10px;
+    font-size: 3vw;
 }
 
 #temp{
-
+    margin-top: 10px;
+    font-size: 3vw;
 }
 
 #content{
-
+    margin-top: 10px;
 }
 
 .headline {
-
+    text-align: center;
 }
 .title{
-
+    font-size: 40px;
+    
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
 label{
     display:block;
-    font-size: 27px;
+    font-size: 4vw;
+    text-align: center;
+    /* margin: auto; */
 }
 
 input{
@@ -59,20 +76,22 @@ input{
     width: 320px;
     background:#22b2da;
     color: #f0d43a;
-    font-size: 20px;
+    font-size: 3vw;
     font-family: 'Oswald', sans-serif;
     border: none;
+    /* margin: auto; */
 }
 
 button{
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     background: #3b4a6b;
     color: #f0d43a;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    margin-top: 10px;
 }
 h1{
     font-size: 36px;
@@ -81,7 +100,7 @@ h1{
 textarea{
     background:#22b2da;
     color: #f0d43a;
-    font-size: 20px;
+    font-size: 3vw;
     font-family: 'Oswald', sans-serif;
 }
 /* Reset style for HTML element on active to have no border*/

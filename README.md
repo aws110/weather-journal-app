@@ -7,11 +7,15 @@ This project requires you to create an asynchronous web app that uses Web API an
 
 ## Installing
 First, download  all files in the repository. You will need to install some NODE dependencies.
-`npm install body-parser`
-`npm install cors`
+```
+npm install body-parser
+npm install cors
+```
 
 ## Start the server
 This webpage will run on a local server on port 3000. To start the server, run the following command from the projects root in a terminal:
-`node server.js`
+```
+node server.js
+```
 
 ### Enjoy!!
